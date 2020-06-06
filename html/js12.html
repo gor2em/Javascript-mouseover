@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Onmouseover ödev</title>
+    <style type="text/css">
+    </style>
+    
+    <script type="text/javascript">
+        function hesapla1(deger)
+        {
+            switch (deger) {
+
+                case "1":
+                    document.c_one.src = "../img/one-on.gif";
+                    document.c_arrow_one.src = "../img/arrow.gif";
+                    document.c_slideshow.src = "../img/hand-one.gif";
+                    break;
+
+                case "2":
+                    document.c_two.src = "../img/two-on.gif";
+                    document.c_arrow_two.src = "../img/arrow.gif";
+                    document.c_slideshow.src = "../img/hand-two.gif";
+
+                    break;
+
+                case "3":
+                    document.c_three.src = "../img/three-on.gif";
+                    document.c_arrow_three.src = "../img/arrow.gif";
+                    document.c_slideshow.src = "../img/hand-three.gif";
+                    break;
+
+                case "4":
+                    document.c_four.src = "../img/four-on.gif";
+                    document.c_arrow_four.src = "../img/arrow.gif";
+                    document.c_slideshow.src = "../img/hand-four.gif";
+                    break;
+
+                case "5":
+                    document.c_five.src = "../img/five-on.gif";
+                    document.c_arrow_five.src = "../img/arrow.gif";
+                    document.c_slideshow.src = "../img/hand-five.gif";
+                    break;
+                default:
+                    break;
+            }
+            //if (deger == "1") {
+            //    document.c_one.src = "../img/one-on.gif";
+            //    document.c_sildeshow.src = "../img/hand-one.gif";
+            //    document.c_arrow_one.src = "../img/arrow.gif";
+            //}
+            //if (deger == "2")
+            //{
+            //    document.c_two.src = "../img/two-on.gif";
+            //}
+
+        }
+        function hesapla2(deger)
+        {
+            document.c_one.src = "../img/one-off.gif";
+            document.c_two.src = "../img/two-off.gif";
+            document.c_three.src = "../img/three-off.gif";
+            document.c_four.src = "../img/two-off.gif";
+            document.c_five.src = "../img/five-off.gif";
+            document.c_arrow_one.src = "../img/blank.gif";
+            document.c_arrow_two.src = "../img/blank.gif";
+            document.c_arrow_three.src = "../img/blank.gif";
+            document.c_arrow_four.src = "../img/blank.gif";
+            document.c_arrow_five.src = "../img/blank.gif";
+            document.c_slideshow.src = "../img/blank.gif";
+        }
+     </script>
+</head>
+<body style="background-color:#69c;">
+    <form id="formum">
+        <table align="center">
+            <tr>
+                <td>
+                    <img src="../img/blank.gif" width="15" height="15" name="c_arrow_one" />
+                    <a href="" onmouseover="hesapla1('1');" onmouseout="hesapla2('1');">
+                        <img src="../img/one-off.gif" name="c_one" width="100" height="15" />
+
+                    </a>
+                    <br />
+                    <img src="../img/blank.gif" width="15" height="15" name="c_arrow_two" />
+                    <a href="" onmouseover="hesapla1('2');" onmouseout="hesapla2('2');">
+                        <img src="../img/two-off.gif" name="c_two" width="100" height="15" />
+                    </a>
+                    <br />
+                    <img src="../img/blank.gif" width="15" height="15" name="c_arrow_three" />
+                    <a href="" onmouseover="hesapla1('3');" onmouseout="hesapla2('3');">
+                        <img src="../img/three-off.gif" name="c_three" width="100" height="15" />
+                    </a>
+                    <br />
+                    <img src="../img/blank.gif" width="15" height="15" name="c_arrow_four" />
+                    <a href="" onmouseover="hesapla1('4');" onmouseout="hesapla2('4');">
+                        <img src="../img/four-off.gif" name="c_four" width="100" height="15" />
+                    </a>
+                    <br />
+                    <img src="../img/blank.gif" width="15" height="15" name="c_arrow_five" />
+                    <a href="" onmouseover="hesapla1('5');" onmouseout="hesapla2('5');">
+                        <img src="../img/five-off.gif" name="c_five" width="100" height="15" />
+                    </a>
+                </td>
+                <td>
+                    <img src="blank.gif" name="c_slideshow" width="100" height="100" />
+                </td>
+            </tr>
+        </table>
+
+    </form>
+</body>
+</html>
